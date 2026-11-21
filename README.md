@@ -23,6 +23,8 @@ Một số can thiệp bằng âm nhạc có thể hỗ trợ giảm cảm nhậ
 2. Bấm phát. Bạn có thể đổi tần số khi đang nghe. Bộ phát giữ pha liên tục và chuyển sang tần số mới trong 80 ms.
 3. Chọn hẹn giờ để âm tự tắt sau 5, 15, 30 hoặc 60 phút. Bấm tạm dừng để kết thúc sớm.
 
+Bấm **Tối giản** để mở Zen. Số Hz ở giữa hiển thị tần số hiện tại. Hàng bên dưới cho chọn nhanh 174, 432, 528 và 963 Hz; menu dấu ba chấm chứa đủ mười preset. Bấm nút tròn hoặc phím cách để phát/dừng. Nhấn **Esc** để về mặt đĩa hoặc dùng **⌘⇧M** để chuyển chế độ.
+
 ## Chạy từ mã nguồn
 
 Cần macOS 15 trở lên và bộ công cụ Swift 6 trở lên. Dự án dùng Swift Package Manager và các framework hệ thống.
@@ -38,3 +40,17 @@ swift test
 scripts/build-mac.sh
 open .build/AuraFreq.app
 ```
+
+## Ngăn Làm việc
+
+Bấm **Làm việc** để mở bảng bên cạnh mặt đĩa. Thêm công việc, chọn số phiên mục tiêu rồi bắt đầu. Mỗi phiên làm việc dài 25 phút, phiên nghỉ dài 5 phút. Khi hết giờ, bảng chuẩn bị pha kế tiếp để bạn tự bắt đầu. Chuyển task sẽ tạm dừng task cũ. Danh sách, tiến độ và thời gian còn lại được lưu trên máy.
+
+Chọn White noise hoặc Brown noise và chỉnh âm lượng nền độc lập với sóng sin. Dán liên kết video vào mục YouTube và bấm **Phát video** để mở trình phát nhúng. Video cần kết nối mạng và được chủ sở hữu cho phép nhúng. **Giảm kích thích** thu gọn bảng về task và đồng hồ, đồng thời dừng video. Đóng ngăn vẫn cho phép phiên Pomodoro tiếp tục.
+
+Trong mục YouTube, mở **Nhạc piano gợi ý** để phát [Clair de lune của Debussy](https://www.youtube.com/watch?v=WNcsUNKlAKw) hoặc [Gymnopédie số 1 của Satie](https://www.youtube.com/watch?v=2WfaotSK3mI), do Rousseau trình diễn. Đây là hai lựa chọn piano không lời để nghe trong phiên làm việc.
+
+Cửa sổ tự thu gọn khi mở Zen và mở rộng khi bật ngăn Làm việc. Khi trở về mặt đĩa, app khôi phục kích thước studio trước đó.
+
+Biểu tượng AuraFreq trên thanh menu macOS cho phép phát, tạm dừng, chọn preset và mở lại cửa sổ. Âm thanh tiếp tục khi đóng cửa sổ chính.
+
+Trong menu **Preset**, dùng **Thêm preset…** để lưu tên và tần số tự chọn. Chọn một preset sẽ chỉnh tần số hiện tại. Danh sách được lưu cục bộ trên Mac và xuất hiện trong mục **Tần số** trên thanh menu.
